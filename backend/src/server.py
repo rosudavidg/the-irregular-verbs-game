@@ -1,4 +1,4 @@
-from flask import Flask, request, Response, make_response
+from flask import Flask, Response, json
 from database import select_random_verb
 
 app = Flask(__name__)
@@ -13,7 +13,7 @@ def get_random_verb():
     try:
         verb = select_random_verb()
 
-        return Response(str(verb), status=200, mimetype='application/json')
+        return Response(json.dumps(verb), status=200, mimetype='application/json')
     except:
         return Response("Selecting a random verb failed!", status=500)
 

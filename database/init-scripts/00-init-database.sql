@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS irregular_verbs (
     -- Autoincrement id
     id SERIAL PRIMARY KEY,
     -- Infinitive
-    infitive VARCHAR (32),
+    infinitive VARCHAR (32),
     -- Simple past(s) - list of accepted words
     simple_past VARCHAR (128),
     -- Past participle(s) - list of accepted words
