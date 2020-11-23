@@ -32,9 +32,26 @@ services:
       - secret_database_db
     networks:
       - database_backend
+      - frontend_backend
+  
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - frontend_backend
+    stdin_open: true
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - "./frontend/.:/app"
+      - /app/node_modules
     
 networks:
   database_backend:
+  frontend_backend:
 
 volumes:
   volume_database:
