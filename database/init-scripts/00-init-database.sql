@@ -1,5 +1,5 @@
 -- Create verbs table
-CREATE TABLE IF NOT EXISTS irregular_vebs (
+CREATE TABLE IF NOT EXISTS irregular_verbs (
     -- Autoincrement id
     id SERIAL PRIMARY KEY,
     -- Infinitive
