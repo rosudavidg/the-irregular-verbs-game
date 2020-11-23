@@ -16,10 +16,29 @@ services:
     volumes:
       - volume_database:/var/lib/postgresql/data
     networks:
-      - webnetwork
+      - database_backend
+  
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_USER: /run/secrets/secret_database_user
+      DATABASE_PASSWORD: /run/secrets/secret_database_password
+      DATABASE_DB: /run/secrets/secret_database_db
+    secrets:
+      - secret_database_user
+      - secret_database_password
+      - secret_database_db
+    networks:
+      - database_backend
+    # TODO: remove ports
+    ports:
+      - 5000:5000
+    
 
 networks:
-  webnetwork:
+  database_backend:
 
 volumes:
   volume_database:
