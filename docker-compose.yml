@@ -32,11 +32,7 @@ services:
       - secret_database_db
     networks:
       - database_backend
-    # TODO: remove ports
-    ports:
-      - 5000:5000
     
-
 networks:
   database_backend:
 
