@@ -63,14 +63,14 @@ def select_random_verb():
 
         # Get random verb
         cursor.execute(
-            f'SELECT infinitive, simple_past, past_particile FROM irregular_verbs WHERE id = {randint(1, verbs_count)}')
+            f'SELECT infinitive, simple_past, past_participle FROM irregular_verbs WHERE id = {randint(1, verbs_count)}')
 
         verb = cursor.fetchone()
 
         return {
             "infinitive": verb[0],
             "simple_past": verb[1],
-            "past_particile": verb[2]
+            "past_participle": verb[2]
         }
 
     finally:
