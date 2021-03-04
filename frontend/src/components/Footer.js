@@ -1,7 +1,7 @@
 import './Footer.css';
 
 function Footer() {
-    return <div>Footer</div>
+    return <div className="footer">👨‍💻 Gabriel David Rosu</div>
 }
 
 export default Footer;

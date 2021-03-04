@@ -1,0 +1,14 @@
+.title {
+    font-size: 42px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Texturina', serif;
+    color: #1C3144;
+    text-shadow: 1px 1px 1px #293744;
+    -webkit-text-fill-color: #1C3144;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
