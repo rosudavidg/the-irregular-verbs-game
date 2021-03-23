@@ -71,7 +71,7 @@ INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sink', 'sank', 'sunk');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sit', 'sit', 'sit');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sleep', 'slept', 'slept');
-INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('slide', 'sid', 'slid');
+INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('slide', 'slid', 'slid');
 
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('speak', 'spoke', 'spoken');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('spend', 'spent', 'spent');
