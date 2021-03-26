@@ -1,7 +1,7 @@
 import './Footer.css';
 
 function Footer() {
-    return <div className="footer">👨‍💻 Gabriel David Rosu</div>
+    return <a className="footer" target="_blank" rel="noopener noreferrer" href="https://github.com/rosudavidg">👨‍💻 Gabriel David Rosu</a>
 }
 
 export default Footer;

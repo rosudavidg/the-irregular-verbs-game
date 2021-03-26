@@ -4,11 +4,12 @@
     margin-top: 20px;
     font-family: 'Texturina', serif;
     color: #1C3144;
+    text-align: center;
     text-shadow: 1px 1px 1px #293744;
     -webkit-text-fill-color: #1C3144;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }

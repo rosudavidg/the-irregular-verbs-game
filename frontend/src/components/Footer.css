@@ -3,4 +3,9 @@
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     margin-bottom: 30px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none !important;
 }
