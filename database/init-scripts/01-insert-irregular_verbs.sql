@@ -49,7 +49,7 @@ INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('make', 'made', 'made');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('mean', 'meant', 'meant');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('meet', 'met', 'met');
-INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('overtake', 'overtook', 'overtake');
+INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('overtake', 'overtook', 'overtaken');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('pay', 'paid', 'paid');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('put', 'put', 'put');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('read', 'read', 'read');
@@ -69,7 +69,7 @@ INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('shut', 'shut', 'shut');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sing', 'sang', 'sung');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sink', 'sank', 'sunk');
-INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sit', 'sit', 'sit');
+INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sit', 'sat', 'sat');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('sleep', 'slept', 'slept');
 INSERT INTO irregular_verbs (infinitive, simple_past, past_participle) VALUES ('slide', 'slid', 'slid');
 
