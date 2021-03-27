@@ -1,0 +1,60 @@
+version: "3.1"
+
+services:
+  database:
+    image: rosudavidg/the-irregular-verbs-game-database:latest
+    environment:
+      POSTGRES_USER_FILE: /run/secrets/secret_database_user
+      POSTGRES_PASSWORD_FILE: /run/secrets/secret_database_password
+      POSTGRES_DB_FILE: /run/secrets/secret_database_db
+    secrets:
+      - secret_database_user
+      - secret_database_password
+      - secret_database_db
+    volumes:
+      - volume_database:/var/lib/postgresql/data
+    networks:
+      - database_backend
+
+  backend:
+    image: rosudavidg/the-irregular-verbs-game-backend:latest
+    depends_on:
+      - database
+    environment:
+      DATABASE_USER: /run/secrets/secret_database_user
+      DATABASE_PASSWORD: /run/secrets/secret_database_password
+      DATABASE_DB: /run/secrets/secret_database_db
+    secrets:
+      - secret_database_user
+      - secret_database_password
+      - secret_database_db
+    networks:
+      - database_backend
+      - frontend_backend
+
+  frontend:
+    image: rosudavidg/the-irregular-verbs-game-frontend:latest
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - frontend_backend
+    stdin_open: true
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+
+networks:
+  database_backend:
+  frontend_backend:
+
+volumes:
+  volume_database:
+
+secrets:
+  secret_database_password:
+    file: ./secrets/secret_database_password
+  secret_database_user:
+    file: ./secrets/secret_database_user
+  secret_database_db:
+    file: ./secrets/secret_database_db
