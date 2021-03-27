@@ -1,7 +1,9 @@
 from flask import Flask, Response, json
+from flask_cors import CORS
 from database import select_random_verb
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/verbs/random', methods=['GET'])
